@@ -76,4 +76,68 @@ combined_list = numbers_list + second_list
 print("Combined list:", combined_list)
 
 
+# Tuples
 
+# Declare a tuple of Canadian provinces.
+canadian_provinces = ('Ontario', 'Quebec', 'British Columbia', 'Alberta')
+
+print("Tuple of Canadian provinces:", canadian_provinces)
+print(f"Data type of the tuple: {type(canadian_provinces).name}")
+
+
+
+# Dictionaries
+
+# Declare a dictionary for Canadian currency values.
+currency_dict = {'nickel': 0.05, 'dime': 0.10, 'quarter': 0.25}
+
+print("Dictionary of currency values:", currency_dict)
+print(f"Data type of the dictionary: {type(currency_dict).name}")
+
+# Modify values to use whole numbers.
+for key in currency_dict:
+    currency_dict[key] = int(currency_dict[key] * 100)
+
+print("Modified dictionary of currency values:", currency_dict)
+
+# Add loonie and toonie.
+currency_dict['loonie'] = 100
+currency_dict['toonie'] = 200
+
+print("Dictionary with loonie and toonie:", currency_dict)
+
+
+
+
+# Sets
+
+# Declare a set of even numbers from 2 to 20.
+even_numbers = set(range(2, 21, 2))
+
+print("Set of even numbers:", even_numbers)
+print(f"Data type of the set: {type(even_numbers).name}")
+
+# Declare a set of multiples of 5 from 5 to 20.
+multiples_of_5 = set(range(5, 21, 5))
+
+print("Set of multiples of 5:", multiples_of_5)
+
+# Declare a set containing unique values from both sets.
+unique_values_set = even_numbers.union(multiples_of_5)
+
+print("Set of unique values:", unique_values_set)
+
+# Declare a set containing values in both sets.
+intersection_set = even_numbers.intersection(multiples_of_5)
+
+print("Set of values in both sets:", intersection_set)
+
+# Declare a set containing values in the first set but not in the second set.
+difference_set = even_numbers.difference(multiples_of_5)
+
+print("Set of values in the first set but not in the second set:", difference_set)
+
+# Declare a set containing values in the second set but not in the first set.
+difference_set_2 = multiples_of_5.difference(even_numbers)
+
+print("Set of values in the second set but not in the first set:", difference_set_2)
