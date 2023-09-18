@@ -38,15 +38,15 @@ Provincial_sales_Tax_RATE = 0.18
 vehicle_price = 250000.00  
 
 # Calculate GST and PST taxes.
-gst_tax = vehicle_price * Goods_and_service_Tax_RATE
-pst_tax = vehicle_price * Provincial_sales_Tax_RATE
+Goods_and_service_Tax_RATE = vehicle_price * Goods_and_service_Tax_RATE
+Provincial_sales_Tax_RATE = vehicle_price * Provincial_sales_Tax_RATE
 
 # Calculate the total cost including taxes.
-total_cost = vehicle_price + gst_tax + pst_tax
+total_cost = vehicle_price + Goods_and_service_Tax_RATE + Provincial_sales_Tax_RATE 
 
-print(f"pre-tax value: {vehicle_price} PST: {pst_tax} GST: {gst_tax} total: {total_cost}")
+print(f"pre-tax value: {vehicle_price} PST: {Provincial_sales_Tax_RATE } GST: {Goods_and_service_Tax_RATE} total: {total_cost}")
 
-print(f"pre-tax value: ${vehicle_price:.2f} PST: ${pst_tax:.2f} GST: ${gst_tax:.2f} total: ${total_cost:.2f}")
+print(f"pre-tax value: ${vehicle_price:.2f} PST: ${Provincial_sales_Tax_RATE :.2f} GST: ${Goods_and_service_Tax_RATE:.2f} total: ${total_cost:.2f}")
 
 # Lists
 
@@ -79,10 +79,10 @@ print("Combined list:", combined_list)
 # Tuples
 
 # Declare a tuple of Canadian provinces.
-canadian_provinces = ('Ontario', 'Quebec', 'British Columbia', 'Alberta')
+canadian_cities = ('Winnipeg','Brampton', 'Montreal', 'Calgary', 'Surrey','Toronto','Missisuaga')
 
-print("Tuple of Canadian provinces:", canadian_provinces)
-print(f"Data type of the tuple: {type(canadian_provinces).name}")
+print("Tuple of Canadian provinces:", canadian_cities)
+print(f"Data type of the tuple: {type(canadian_cities).name}")
 
 
 
@@ -117,27 +117,27 @@ even_numbers = set(range(2, 21, 2))
 print("Set of even numbers:", even_numbers)
 print(f"Data type of the set: {type(even_numbers).name}")
 
-# Declare a set of multiples of 5 from 5 to 20.
-multiples_of_5 = set(range(5, 21, 5))
+# Declare a set of multiples of 2 from 2 to 20.
+multiples_of_2 = set(range(2,4,6,8,10,12,14,16,18,20))
 
-print("Set of multiples of 5:", multiples_of_5)
+print("Set of multiples of 2:", multiples_of_2)
 
 # Declare a set containing unique values from both sets.
-unique_values_set = even_numbers.union(multiples_of_5)
+unique_values_set = even_numbers.union(multiples_of_2)
 
 print("Set of unique values:", unique_values_set)
 
 # Declare a set containing values in both sets.
-intersection_set = even_numbers.intersection(multiples_of_5)
+intersection_set = even_numbers.intersection(multiples_of_2)
 
 print("Set of values in both sets:", intersection_set)
 
 # Declare a set containing values in the first set but not in the second set.
-difference_set = even_numbers.difference(multiples_of_5)
+difference_set = even_numbers.difference(multiples_of_2)
 
 print("Set of values in the first set but not in the second set:", difference_set)
 
 # Declare a set containing values in the second set but not in the first set.
-difference_set_2 = multiples_of_5.difference(even_numbers)
+difference_set_2 = multiples_of_2.difference(even_numbers)
 
 print("Set of values in the second set but not in the first set:", difference_set_2)
