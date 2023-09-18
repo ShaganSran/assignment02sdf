@@ -31,15 +31,15 @@ print(f"next year: {current_year} type: {type(current_year).name}")
 # Performing Calculations
 
 # Declare constants for GST and PST rates.
-GST_RATE = 0.08  
-PST_RATE = 0.16  
+Goods_and_service_Tax_RATE = 0.13
+Provincial_sales_Tax_RATE = 0.18 
 
 # Declare a variable for the vehicle price and initialize it.
-vehicle_price = 100000.00  
+vehicle_price = 250000.00  
 
 # Calculate GST and PST taxes.
-gst_tax = vehicle_price * GST_RATE
-pst_tax = vehicle_price * PST_RATE
+gst_tax = vehicle_price * Goods_and_service_Tax_RATE
+pst_tax = vehicle_price * Provincial_sales_Tax_RATE
 
 # Calculate the total cost including taxes.
 total_cost = vehicle_price + gst_tax + pst_tax
