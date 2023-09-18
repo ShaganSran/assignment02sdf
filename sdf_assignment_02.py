@@ -48,6 +48,32 @@ print(f"pre-tax value: {vehicle_price} PST: {pst_tax} GST: {gst_tax} total: {tot
 
 print(f"pre-tax value: ${vehicle_price:.2f} PST: ${pst_tax:.2f} GST: ${gst_tax:.2f} total: ${total_cost:.2f}")
 
+# Lists
+
+# Declare a list of numbers from 1 to 10.
+numbers_list = list(range(1, 11))
+
+print(f"Data type of the list: {type(numbers_list).name}")
+
+print("List of numbers:", numbers_list)
+
+# Add your first name to the list between values 5 and 6.
+numbers_list.insert(5, first_name)
+
+print("Updated list:", numbers_list)
+
+# Remove the number 9 from the list.
+numbers_list.remove(9)
+
+print("List after removing 9:", numbers_list)
+
+# Create a second list.
+second_list = ['A', 'B', 'C']
+
+# Create a third list containing values from the first and second lists.
+combined_list = numbers_list + second_list
+
+print("Combined list:", combined_list)
 
 
 
