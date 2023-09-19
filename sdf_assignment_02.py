@@ -2,7 +2,7 @@
 Description: Created assignment 2
 Author: Shaganpreet singh sran
 Date: September 17, 2023
-Usage: sdf assignment 2
+Usage:calculations,tuples,lists,data, variables and constants basics
 """
 
 # Simple data types
