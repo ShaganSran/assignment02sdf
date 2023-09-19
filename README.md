@@ -1,10 +1,15 @@
-# Module_02 Assignment02
+# Assignment02
 ## Description
 - Simple Data Types
-- Calculation
+  done
+- Calculations
+  done
 - Lists and Tuples
+  done
 - Dictionaries and Sets
+  done
 - Documentation and PEP 8 Standards
+  done
 
 ## Author
 Shaganpreet singh sran
